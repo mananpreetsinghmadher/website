@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>educationWEB</title>
+</head>
+<style>
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+header .btn {
+    background: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.featured-items, .tutorial-categories, .course-list, .resource-items, .blog-posts, .team, .community-forum {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links a, .social-media a {
+    color: #ff9800;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links, .social-media {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .featured-items, .course-list, .resource-items, .blog-posts, .team, .community-forum {
+        flex-direction: column;
+    }
+
+    article {
+        flex: 1 1 100%;
+    }
+}
+
+
+</style>
+<body>
+    <!-- Featured Content Section -->
+<section id="featured-content">
+    <h2>Featured Content</h2>
+    <div class="featured-items">
+        <article>
+            <h3>Latest Tutorial</h3>
+            <p>Learn the basics of Unity and start creating your first game.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Popular Course</h3>
+            <p>Advanced Unity Techniques: Take your skills to the next level.</p>
+            <a href="#">Enroll Now</a>
+        </article>
+        <article>
+            <h3>Recent Blog Post</h3>
+            <p>Discover the latest trends in the game development industry.</p>
+            <a href="#">Read More</a>
+        </article>
+    </div>
+</section>
+
+<!-- Tutorials Section -->
+<section id="tutorials">
+    <h2>Tutorials</h2>
+    <div class="tutorial-categories">
+        <a href="#">Unity Basics</a>
+        <a href="#">Advanced Game Mechanics</a>
+        <a href="#">Game Design Principles</a>
+        <a href="#">Asset Creation and Integration</a>
+        <a href="#">Scripting and Programming</a>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses">
+    <h2>Courses</h2>
+    <div class="course-list">
+        <article>
+            <h3>Intro to Game Development</h3>
+            <p>A beginner-friendly course to get you started in game development.</p>
+            <a href="#">Learn More</a>
+        </article>
+        <article>
+            <h3>Creating Your First Game</h3>
+            <p>Step-by-step guidance to create your first fully functional game.</p>
+            <a href="#">Learn More</a>
+        </article>
+        <article>
+            <h3>Advanced Unity Techniques</h3>
+            <p>Deep dive into advanced features of Unity.</p>
+            <a href="#">Learn More</a>
+        </article>
+    </div>
+</section>
+
+<!-- Resources Section -->
+<section id="resources">
+    <h2>Resources</h2>
+    <div class="resource-items">
+        <article>
+            <h3>Downloadable Assets</h3>
+            <p>Access free and premium game assets to enhance your projects.</p>
+            <a href="#">Explore Assets</a>
+        </article>
+        <article>
+            <h3>Recommended Tools</h3>
+            <p>Discover the best tools and software for game development.</p>
+            <a href="#">View Tools</a>
+        </article>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-posts">
+        <article>
+            <h3>Latest Trends in Game Development</h3>
+            <p>Stay updated with the newest trends and technologies.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>My Game Development Journey</h3>
+            <p>Insights and lessons learned from my personal experience.</p>
+            <a href="#">Read More</a>
+        </article>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us">
+    <h2>About Us</h2>
+    <p>We are passionate game developers dedicated to helping others achieve their dreams in the gaming industry.</p>
+    <div class="team">
+        <article>
+            <h3>Our Team</h3>
+            <p>Meet the talented individuals behind our platform.</p>
+        </article>
+    </div>
+</section>
+
+<!-- Community Section -->
+<section id="community">
+    <h2>Community</h2>
+    <div class="community-forum">
+        <article>
+            <h3>Join the Discussion</h3>
+            <p>Connect with fellow developers, share your projects, and get feedback.</p>
+            <a href="#">Visit Forum</a>
+        </article>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#courses">Courses</a>
+        <a href="#blog">Blog</a>
+        <a href="#about-us">About Us</a>
+    </div>
+    <div class="social-media">
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 Game Development Educational Platform. All rights reserved.</p>
+</footer>
+</body>
+</html>
